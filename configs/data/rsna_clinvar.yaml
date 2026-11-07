@@ -1,0 +1,6 @@
+dataset: fusion
+n_train: 700
+n_val: 150
+n_test: 150
+candidates_per_case: 50
+image_size: 512

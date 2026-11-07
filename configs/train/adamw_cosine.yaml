@@ -1,0 +1,10 @@
+lr: 3.0e-4
+weight_decay: 0.01
+epochs: 100
+batch_size: 32
+world_size: 4
+eta_min: 1.0e-6
+grad_clip: 1.0
+mc_samples: 30
+curriculum_phase1: 20
+curriculum_phase2: 50

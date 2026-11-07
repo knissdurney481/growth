@@ -1,0 +1,5 @@
+name: ablation_modality_var
+use_image: false
+use_phenotype: false
+train:
+  out_dir: runs/ablation_modality_var

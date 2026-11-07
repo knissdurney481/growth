@@ -1,0 +1,58 @@
+name: main
+task: fusion
+model:
+  d_model: 768
+  img_size: 512
+  patch_size: 16
+  in_channels: 1
+  vit_depth: 12
+  vit_heads: 12
+  vit_mlp_ratio: 4.0
+  pretrained_vit: true
+  hpo_terms: 847
+  gat_hidden: 256
+  gat_layers: 3
+  gat_heads: 4
+  gat_dropout: 0.3
+  variant_feat_dim: 15
+  variant_hidden: 512
+  variant_layers: 4
+  variant_heads: 8
+  max_variants: 100
+  fusion_layers: 2
+  fusion_heads: 8
+  latent_dim: 128
+  action_dim: 4
+  rollout_steps: 8
+  dropout: 0.2
+data:
+  dataset: fusion
+  n_train: 700
+  n_val: 150
+  n_test: 150
+  candidates_per_case: 50
+  image_size: 512
+physics:
+  lambda_pb: 0.1
+  lambda_gp: 0.05
+  lambda_ghs: 0.05
+objective:
+  mode: fixed
+  lambda_rank_max: 0.5
+  lambda_reg: 1.0e-5
+  rank_margin: 1.0
+train:
+  lr: 3.0e-4
+  weight_decay: 0.01
+  epochs: 100
+  batch_size: 32
+  world_size: 4
+  grad_accum: 1
+  eta_min: 1.0e-6
+  grad_clip: 1.0
+  amp: false
+  seed: 1234
+  mc_samples: 30
+  curriculum_phase1: 20
+  curriculum_phase2: 50
+  out_dir: runs/main

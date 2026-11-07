@@ -1,0 +1,6 @@
+name: ablation_modality_full
+use_image: true
+use_phenotype: true
+use_variant: true
+train:
+  out_dir: runs/ablation_modality_full

@@ -1,0 +1,4 @@
+name: ablation_fusion_early
+fusion: early
+train:
+  out_dir: runs/ablation_fusion_early

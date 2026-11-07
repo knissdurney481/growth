@@ -1,0 +1,4 @@
+name: ablation_encoder_resnet50
+image_encoder: cnn
+train:
+  out_dir: runs/ablation_encoder_resnet50

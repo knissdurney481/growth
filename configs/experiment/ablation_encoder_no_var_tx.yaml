@@ -1,0 +1,4 @@
+name: ablation_encoder_no_var_tx
+variant_encoder: mean
+train:
+  out_dir: runs/ablation_encoder_no_var_tx

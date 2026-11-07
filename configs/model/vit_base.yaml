@@ -1,0 +1,15 @@
+d_model: 768
+img_size: 512
+patch_size: 16
+vit_depth: 12
+vit_heads: 12
+pretrained_vit: true
+gat_hidden: 256
+gat_layers: 3
+gat_heads: 4
+variant_hidden: 512
+variant_layers: 4
+variant_heads: 8
+fusion_layers: 2
+fusion_heads: 8
+latent_dim: 128

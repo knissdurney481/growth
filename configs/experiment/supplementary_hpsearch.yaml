@@ -1,0 +1,12 @@
+name: supplementary_hpsearch
+train:
+  lr: 3.0e-4
+  weight_decay: 0.01
+  batch_size: 32
+  out_dir: runs/supplementary_hpsearch
+objective:
+  lambda_rank_max: 0.5
+physics:
+  lambda_pb: 0.1
+  lambda_gp: 0.05
+  lambda_ghs: 0.05

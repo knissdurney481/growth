@@ -1,0 +1,4 @@
+name: ablation_physics_no_ghs
+ablate_ghs: true
+train:
+  out_dir: runs/ablation_physics_no_ghs

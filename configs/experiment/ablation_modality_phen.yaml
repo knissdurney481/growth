@@ -1,0 +1,5 @@
+name: ablation_modality_phen
+use_image: false
+use_variant: false
+train:
+  out_dir: runs/ablation_modality_phen

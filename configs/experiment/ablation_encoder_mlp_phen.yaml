@@ -1,0 +1,4 @@
+name: ablation_encoder_mlp_phen
+phenotype_encoder: mlp
+train:
+  out_dir: runs/ablation_encoder_mlp_phen
